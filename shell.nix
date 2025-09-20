@@ -7,6 +7,7 @@ pkgs.mkShell {
       nodejs
       pnpm
       protoc-gen-js
+      protoc-gen-grpc-web
   ];
 }
 
