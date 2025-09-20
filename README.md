@@ -36,12 +36,15 @@ To run/test the project, first start the server:
 
 ```bash
 cd server
+go mod tidy
 go run cmd/server/main.go
 ```
 
-Then, start the client:
+Then, in a separate shell, start the client:
 
 ```bash
+cd client
+pnpm i
 pnpm run dev
 ```
 
