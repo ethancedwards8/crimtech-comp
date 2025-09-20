@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package count.v1;
+
+option go_package = "example/gen/count/v1;countv1";
+
+message CountRequest {
+  uint32 increment = 1;
+}
+
+message CountResponse {
+  uint32 total = 1;
+}
+
+service CountService {
+  rpc Count(CountRequest) returns (CountResponse) {}
+}

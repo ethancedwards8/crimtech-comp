@@ -2,8 +2,11 @@
 
 pkgs.mkShell {
   buildInputs = with pkgs; [
-      go
       buf
+      go
+      nodejs
+      pnpm
+      protoc-gen-js
   ];
 }
 
